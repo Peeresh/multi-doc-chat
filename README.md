@@ -7,10 +7,10 @@ A production-ready **Conversational AI system** that allows users to upload mult
 
 ### Upload & Chat Interface
 
-![Upload](assets/upload_and_chat.png.png)
+![Upload](assets/upload_and_chat.png)
 
 ### Example Response
-![Upload](assets/response_example.png.png)
+![Upload](assets/response_example.png)
 
 ---
 ##  Features
