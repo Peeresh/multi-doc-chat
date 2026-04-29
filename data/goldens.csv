@@ -1,0 +1,11 @@
+question,answer
+How does Multimodal RAG (M-RAG) handle an image of a complex technical chart?,M-RAG retrieves the image and uses a Vision-Language Model (VLM) to describe its features in the context of the query.
+What is the 'Context-Generation Hallucination' risk in multimodal RAG systems?,"It occurs when the VLM generates an incorrect text description of a retrieved image, misleading the final answer."
+"In the MMed-RAG paper, how much did factual accuracy improve for medical Vision-Language Models (LVLMs)?",MMed-RAG achieved an average improvement of 43.8% in factual accuracy across medical datasets.
+Why is fine-tuning often preferred for domain-specific layout understanding (like reading invoices)?,Fine-tuning allows the model to learn the specific spatial patterns and 'jargon' of layouts better than zero-shot retrieval.
+How does RAG compare to Fine-Tuning when identifying a rare medical condition from a single X-ray?,"RAG is superior here; if the rare case exists in the database, RAG finds it. FT often fails to memorize 'one-shot' facts."
+What happens to M-RAG performance when the retrieved image is low-resolution or has OCR errors?,Accuracy drops significantly; M-RAG is highly sensitive to the quality of the 'raw' multimodal context retrieved.
+Can fine-tuning a Vision-Language Model help it ignore 'distractor' images in a retrieval set?,"Yes, fine-tuning on preference data (DPO/RLHF) helps the model learn which visual cues are relevant and which are noise."
+What is the 'Cumulative Benefit' of combining RAG with preference fine-tuning (RAG-PT)?,"It aligns the model's 'eyes' with the retrieved context, reducing the chance of the model ignoring the provided image."
+"Which approach is better for a company that adds 1,000 new product photos to their catalog daily?",RAG is the only viable choice; fine-tuning every day on new images is computationally and financially prohibitive.
+How does M-RAG handle queries that require 'compositional reasoning' across a table and a diagram?,"Advanced M-RAG uses 'iterative retrieval' to first parse the table, then use those insights to query the diagram."
