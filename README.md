@@ -6,12 +6,12 @@ A production-ready **Conversational AI system** that allows users to upload mult
 ##  Demo
 
 ### Upload & Chat Interface
-![alt text](upload_and_chat.png.png)
 
+![Upload](assets/upload_and_chat.png.png)
 
 ### Example Response
+![Upload](assets/response_example.png.png)
 
-![alt text](response_example.png.png)
 ---
 ##  Features
 
