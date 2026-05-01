@@ -19,7 +19,7 @@ env:
 permissions:
   id-token: write
   contents: read
-
+#corrected
 jobs:
   check-status:
     runs-on: ubuntu-latest
