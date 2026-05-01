@@ -1,14 +1,14 @@
 {
-    "family": "multi-doc-chatstdlive",
+    "family": "multi-doc-chatstd",
     "networkMode": "awsvpc",
-    "executionRoleArn": "arn:aws:iam::306570692493:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::635026339910:role/ecsTaskExecutionRole",
     "requiresCompatibilities": ["FARGATE"],
     "cpu": "1024",
     "memory": "8192",
     "containerDefinitions": [
       {
         "name": "multi-doc-chat-live-container",
-        "image": "306570692493.dkr.ecr.us-east-1.amazonaws.com/llmopsrepolive",
+        "image": "635026339910.dkr.ecr.us-east-1.amazonaws.com/multi-doc-chat-repo",
         "cpu": 1024,
         "essential": true,
         "portMappings": [
@@ -28,15 +28,15 @@
         ],
         "secrets": [
           {
-            "name": "apikeyliveclass",
-            "valueFrom": "arn:aws:secretsmanager:us-east-1:306570692493:secret:apikeyliveclass-EykEZf"
+            "name": "apikeytest",
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:635026339910:secret:apikeytest-O0073l"
           }
   
         ],
         "logConfiguration": {
           "logDriver": "awslogs",
           "options": {
-            "awslogs-group": "/ecs/llmopstdlive",
+            "awslogs-group": "/ecs/multi-doc-chatstd",
             "awslogs-region": "us-east-1",
             "awslogs-stream-prefix": "ecs",
             "awslogs-create-group": "true"

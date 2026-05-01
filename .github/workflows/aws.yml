@@ -12,7 +12,7 @@ env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: multi-doc-chat-repo
   ECS_SERVICE: multi-doc-chat-live-service
-  ECS_CLUSTER: multi-doc-chat-live-cluster
+  ECS_CLUSTER: multi-doc-chat-cluster
   ECS_TASK_DEFINITION: .github/workflows/task_defination.json
   CONTAINER_NAME: multi-cod-chat-live-container
 
