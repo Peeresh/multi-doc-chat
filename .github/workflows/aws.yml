@@ -14,7 +14,7 @@ env:
   ECS_SERVICE: multi-doc-chat-live-service
   ECS_CLUSTER: multi-doc-chat-cluster
   ECS_TASK_DEFINITION: .github/workflows/task_defination.json
-  CONTAINER_NAME: multi-cod-chat-live-container
+  CONTAINER_NAME: multi-doc-chat-live-container
 
 permissions:
   id-token: write
